@@ -4,6 +4,7 @@ from sqlalchemy import CHAR, Column, DateTime, String, text,Table,ForeignKey
 from sqlalchemy.dialects.mysql import BIGINT, INTEGER, TINYINT
 from sqlalchemy.orm import relationship
 from models.model_base import Base
+from .sys_menu import SysMenu
 
 
 metadata = Base.metadata

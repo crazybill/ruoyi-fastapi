@@ -3,6 +3,9 @@ from sqlalchemy import CHAR, Column, DateTime, String, text,ForeignKey,Table
 from sqlalchemy.dialects.mysql import BIGINT
 from sqlalchemy.orm import relationship
 from models.model_base import Base
+from .sys_dept import SysDept
+from .sys_role import SysRole
+from .sys_post import SysPost
 
 metadata = Base.metadata
 

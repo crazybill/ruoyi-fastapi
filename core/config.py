@@ -1,17 +1,14 @@
 
-from typing import List,Union
-from pydantic import AnyHttpUrl,validator
-
 class Config:
 
-    APP_NAME = '若依'
+    APP_NAME = '若依FastAPI'
     APP_CODE = 'ruoyi'       # 应用编码，用于缓存key的前缀
 
     # 数据库
     HOST = '127.0.0.1'
     PORT = '3306'
     DATABASE = 'ruoyi'
-    USERNAME = 'root'
+    USERNAME = 'ruoyi'
     PASSWORD = 'admin'
 
     DB_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8".format(username=USERNAME,password=PASSWORD, host=HOST,port=PORT, db=DATABASE)

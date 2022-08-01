@@ -18,7 +18,7 @@ class TokenService:
 
     async def login(self,db:Session,username:str,password:str,code:str='',uuid:str=''):
         '''用户登录验证，并生成 token，缓存 loginUser'''
-        user = SysUser(username='admin',password='admin123')
+        user = db.query(SysUser).filter(SysUser.userName == username)
 
         loginUser = LoginUser(user=user)
         roles = 'admin'
