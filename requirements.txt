@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+celery
+pymysql
+sqlacodegen
+aioredis
+pyyaml ua-parser user-agents
+fastapi-pagination[sqlalchemy]
+jinja2

@@ -14,7 +14,7 @@ class Config:
     USERNAME = 'ruoyi'
     PASSWORD = 'admin'
 
-    DB_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8".format(username=USERNAME,password=PASSWORD, host=HOST,port=PORT, db=DATABASE)
+    DB_URI = f'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}?charset=utf8'
 
 def change_columns(filename):
     lines = []
